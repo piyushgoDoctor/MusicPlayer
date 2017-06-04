@@ -30,10 +30,6 @@ public class MainActivity extends Activity {
     ArrayList<String> listContent=new ArrayList<>();
      FloatingActionButton btn;
 
-    private final int[] resID = { R.raw.ai_dil_hai_muskil, R.raw.ai_dil_hai_muskil, R.raw.ai_dil_hai_muskil,
-            R.raw.ai_dil_hai_muskil, R.raw.ai_dil_hai_muskil, R.raw.ai_dil_hai_muskil,
-            R.raw.ai_dil_hai_muskil, R.raw.ai_dil_hai_muskil,
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
