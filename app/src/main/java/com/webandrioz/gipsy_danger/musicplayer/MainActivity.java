@@ -24,7 +24,6 @@ import java.util.StringTokenizer;
 
 public class MainActivity extends Activity {
 
-    // variable declaration
     private ListView mainList;
     private MediaPlayer mp;
 
@@ -40,7 +39,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-// Initializing variables
         mp = new MediaPlayer();
         mp.setLooping(true);
         mainList = (ListView) findViewById(R.id.listView1);
@@ -120,29 +118,11 @@ public class MainActivity extends Activity {
             json=new String(buffer,"UTF-8");
 
         }catch(Exception e){
-
+            Log.e("load assets", "loadAssets: "+e.getMessage() );
 
         }
         return json;
 
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//// Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//// Handle action bar item clicks here. The action bar will
-//// automatically handle clicks on the Home/Up button, so long
-//// as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 }
